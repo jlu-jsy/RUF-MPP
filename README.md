@@ -48,11 +48,9 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   --device 0 \
   --aug none \
   --aug_ratio 0.0 \
-  --split balanced_scaffold \
   --epochs 500 \
   --batch_size 256 \
-  --lr 0.0001 \
-  --num_runs 5
+  --lr 0.0001
 ```
 
 Run with rule-based augmentation:
@@ -63,12 +61,9 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   --device 0 \
   --aug rule \
   --aug_ratio 1.0 \
-  --rule_probs 0.45,0.45,0.10 \
-  --split balanced_scaffold \
   --epochs 500 \
   --batch_size 256 \
-  --lr 0.0001 \
-  --num_runs 5
+  --lr 0.0001
 ```
 
 For ToxCast:
@@ -79,10 +74,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
   --device 0 \
   --aug rule \
   --aug_ratio 1.0 \
-  --rule_probs 0.45,0.45,0.10 \
-  --split balanced_scaffold \
   --epochs 500 \
   --batch_size 128 \
-  --lr 0.0001 \
-  --num_runs 5
+  --lr 0.0001
 ```
